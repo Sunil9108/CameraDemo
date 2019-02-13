@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.10.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 17
+    buildToolsVersion "19.0.0"
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 17
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'Manantiales/src/main/AndroidManifest.xml'
+        }
+    }
+}
